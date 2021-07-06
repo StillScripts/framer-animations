@@ -1,11 +1,11 @@
 import React from 'react'
 import { Header } from '../../components/structures'
  
-type HomepageProps = {
+type HomeProps = {
 	text: string;
 }
  
-const Homepage:React.FC<HomepageProps> = ({ text }) => {
+const Home:React.FC<HomeProps> = ({ text }) => {
 	return (
 		<div>
 			<Header text='hey' />
@@ -14,4 +14,4 @@ const Homepage:React.FC<HomepageProps> = ({ text }) => {
 	)
 }
  
-export default Homepage
+export default Home

@@ -1,5 +1,5 @@
 import Head from 'next/head'
-import Home from '../src/templates/Homepage'
+import Home from '../src/templates/Home'
 
 const HomePage:React.FC = () => {
 	return (
@@ -8,9 +8,7 @@ const HomePage:React.FC = () => {
 				<title>Home | Framer Animations</title>
 			</Head>
 			<div>
-				<h1>
-					Hey
-				</h1>
+				<Home text='hey' />
 			</div>
 		</div>
 	)

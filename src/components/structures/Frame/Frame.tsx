@@ -1,13 +1,13 @@
 import React from 'react'
  
 type FrameProps = {
-	text: string;
+	hey?: string;
 }
  
-const Frame:React.FC<FrameProps> = ({ text }) => {
+const Frame:React.FC<FrameProps> = ({ children }) => {
 	return (
-		<div className='shadow p-4'>
-			{text}
+		<div className='bg-white shadow p-4 m-4 rounded'>
+			{children}
 		</div>
 	)
 }
