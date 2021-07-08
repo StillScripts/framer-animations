@@ -103,10 +103,10 @@ const MovingIcons:React.FC<MovingIconsProps> = ({ className, icons }) => {
 						duration: 1
 					}}
 					key={`${icon} ${id}`}
-					className={'absolute left-20 bottom-24 w-8 h-8 p-6 sm:w-24 sm:h-24 '}
+					className={'absolute left-24 bottom-20 w-24 h-24 cursor-pointer rounded-full bg-blue-700 flex flex-col justify-center items-center'}
 				>
 					<Icon 
-						className='flex flex-col justify-center items-center w-24 h-24 p-2 cursor-pointer rounded-full bg-blue-700' 
+						className='p-2  ' 
 						icon={icon}
 						index={id}
 						setIndex={()=>setCurrentIndex(id)}
