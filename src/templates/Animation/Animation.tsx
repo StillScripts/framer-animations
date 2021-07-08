@@ -5,14 +5,16 @@ type AnimationProps = {
 	text: string;
 }
  
-const Animation:React.FC<AnimationProps> = ({ children }) => {
+const Animation:React.FC<AnimationProps> = ({ text, children }) => {
 	return (
-		<div>
+		<div className='w-full'>
 			<Header text='hey' />
-			<Frame>
-				{children}
-			</Frame>
-
+			<div className='w-full h-full flex flex-col justify-center items-center p-2'>
+				<h3 className='mt-2 mb-4'>{text}</h3>
+				<Frame>
+					{children}
+				</Frame>
+			</div>
 		</div>
 	)
 }

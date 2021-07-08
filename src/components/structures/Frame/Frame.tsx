@@ -6,7 +6,7 @@ type FrameProps = {
  
 const Frame:React.FC<FrameProps> = ({ children }) => {
 	return (
-		<div className='bg-white shadow p-4 m-4 rounded'>
+		<div className='inline-block bg-white shadow p-4 rounded sm:w-auto'>
 			{children}
 		</div>
 	)

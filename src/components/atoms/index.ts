@@ -1,4 +1,4 @@
 export { default as Button } from './Button'
-export { default as CircleMotion } from './CircleMotion'
+export { default as Icon } from './Icon'
+export { default as MorphingCircle } from './MorphingCircle'
 export { default as MotionButton } from './MotionButton'
-export { default as Square } from './Square'

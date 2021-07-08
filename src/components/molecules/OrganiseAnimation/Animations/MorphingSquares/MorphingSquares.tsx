@@ -1,14 +1,13 @@
 import React from 'react'
 import { motion } from 'framer-motion'
-import { Square } from '../../../atoms'
+import Square from './Square'
 
-type BasicSquaresProps = {
+type MorphingSquaresProps = {
 	blur?: boolean;
 	transparent?: boolean
 }
  
- 
-const BasicSquares:React.FC<BasicSquaresProps> = ({ blur, transparent }) => {
+const MorphingSquares:React.FC<MorphingSquaresProps> = ({ blur, transparent }) => {
 	return (
 		<motion.div 
 			className=' w-48 h-48 relative'
@@ -27,4 +26,4 @@ const BasicSquares:React.FC<BasicSquaresProps> = ({ blur, transparent }) => {
 	)
 }
  
-export default BasicSquares
+export default MorphingSquares
