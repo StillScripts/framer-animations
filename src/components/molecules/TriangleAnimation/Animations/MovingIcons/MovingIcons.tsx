@@ -93,6 +93,8 @@ const MovingIcons:React.FC<MovingIconsProps> = ({ className, icons }) => {
 
 			return (
 				<motion.div
+					key={`${icon} ${id}`}
+					className='absolute left-24 bottom-20 w-20 h-20 p-4 cursor-pointer flex flex-col justify-center items-center rounded-full bg-blue-700 '
 					animate={{
 						scale: currentPosition==='current'? 1: 0.4,
 						opacity: currentPosition==='current'? 1: 0.7,
@@ -102,14 +104,11 @@ const MovingIcons:React.FC<MovingIconsProps> = ({ className, icons }) => {
 					transition={{
 						duration: 1
 					}}
-					key={`${icon} ${id}`}
-					className={'absolute left-24 bottom-20 w-24 h-24 cursor-pointer rounded-full bg-blue-700 flex flex-col justify-center items-center'}
+					onClick={()=>setCurrentIndex(id)}
 				>
 					<Icon 
-						className='p-2  ' 
+						className='text-white'
 						icon={icon}
-						index={id}
-						setIndex={()=>setCurrentIndex(id)}
 					/>
 				</motion.div>
 			)
