@@ -1,7 +1,19 @@
 //const defaultTheme = require('tailwindcss/defaultTheme')
 
 module.exports = {
-  purge: [],
+  purge: [
+    './pages/**/*.{js,ts,jsx,tsx}', 
+    './src/templates/**/*.{js,ts,jsx,tsx}',
+    './src/components/structures/**/*.{js,ts,jsx,tsx}',
+    './src/components/atoms/**/*.{js,ts,jsx,tsx}',
+    './src/components/molecules/**/*.{js,ts,jsx,tsx}',
+    './src/components/molecules/FlowerOfLifeAnimation/**/*.{js,ts,jsx,tsx}',
+    './src/components/molecules/FlowerOfLifeAnimation/**/**/*.{js,ts,jsx,tsx}',
+    './src/components/molecules/OrganiseAnimation/**/*.{js,ts,jsx,tsx}',
+    './src/components/molecules/OrganiseAnimation/**/**/*.{js,ts,jsx,tsx}',
+    './src/components/molecules/TriangleAnimation/**/*.{js,ts,jsx,tsx}',
+    './src/components/molecules/TriangleAnimation/**/**/*.{js,ts,jsx,tsx}',
+  ],
   darkMode: false, // or 'media' or 'class'
   theme: {
     extend: {
