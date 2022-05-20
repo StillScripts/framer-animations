@@ -9,7 +9,7 @@ const FourFeaturesPage:NextPage = () => {
 		<Head>
 			<title>Four Features | Framer Animation</title>
 		</Head>
-		<Animation text='Flower of Life Animation' >
+		<Animation text='Four Features Animation' >
 			<FourFeatures />
 		</Animation>
 	</div>

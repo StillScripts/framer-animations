@@ -2,6 +2,7 @@ import React from "react";
 import { Frame, Header } from "../../components/structures";
 
 type AnimationProps = {
+  children: JSX.Element
   text: string;
 };
 

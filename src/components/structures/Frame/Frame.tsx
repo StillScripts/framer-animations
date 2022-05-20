@@ -1,7 +1,7 @@
 import React from 'react'
  
 type FrameProps = {
-	hey?: string;
+ children: JSX.Element
 }
  
 const Frame:React.FC<FrameProps> = ({ children }) => {

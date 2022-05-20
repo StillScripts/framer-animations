@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import Animation from '../../src/templates/Animation'
-import FlowerOfLifeAnimation from '../../src/components/molecules/FlowerOfLife'
+import FlowerOfLifeAnimation from '../../src/components/molecules/FlowerOfLifeOld'
 
 const FlowerOfLifePage:React.FC = () => {
 	return (
