@@ -11,12 +11,12 @@ const Circle:React.FC<CircleProps> = ({ top, left, delay }) => {
 	return (
 		<motion.div
 			animate={{
-				scale: [0, 1],
+				scale: [0, 1, 1],
 			}}
 			transition={{ 
 				delay: delay,
-				repeat: Infinity, repeatType: 'reverse', 
-				duration: 4
+				repeat: Infinity, repeatType: 'loop', 
+				duration: 3
 			}}
 			className={`
 				absolute rounded-full border-2 border-black bg-blue-200 mix-blend-multiply
